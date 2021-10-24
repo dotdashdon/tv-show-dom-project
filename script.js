@@ -4,8 +4,7 @@
 const body = document.querySelector('body');
 body.style.backgroundColor = 'white';
 
-//episode count
-const rootElem = document.getElementById("root");
+
 //rootElem.style.backgroundColor ='white';
 
 //container for all episodes cards 
@@ -22,16 +21,19 @@ container.appendChild(card);
 //episode title append to card 
 const episode = document.createElement('h4');
 episode.setAttribute('class' ,'episode');
-episode.innerText="Episode";
+episode.innerText="Episode Title";
 card.appendChild(episode);
 
+//episode count append to card
+const rootElem = document.getElementById("root");
+card.appendChild(rootElem);
 
 //season append to card 
 
-// const season = document.createElement('h1');
-// season.setAttribute('class', 'season');
-// season.innerText = '1';
-// cardDiv.appendChild(season);
+const season = document.createElement('h4');
+season.setAttribute('class', 'season');
+season.innerText = 'Season:1 Episode:1';
+card.appendChild(season);
 
 //episode image append to card 
 
