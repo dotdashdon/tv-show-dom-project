@@ -1,3 +1,89 @@
-#root {
-  color: red;
+
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+
+* {
+box-sizing: border-box;
 }
+
+.header {
+  padding: 60px;
+  overflow: hidden;
+  background-color: khaki;
+  color:darkolivegreen;
+  padding: 20px 10px;
+  font-family: 'Muli',sans-serif;
+  border-style: solid;
+}
+
+
+#root {
+  color: black;
+  background-color: darkgoldenrod;
+  padding: 60px;
+  padding: 20px 10px;
+  font-size: 30px;
+  font-family: 'Muli',sans-serif;
+  border-color: darkred;
+  border-style: solid;
+
+}
+
+.container {
+display:flex;
+flex: auto;
+background-color:lightblue;
+width: 10vw;
+border-radius: 3px;
+border-color:rgb(139, 61, 113);
+border-style: solid;
+}
+
+.cardContainer{
+display: flex;
+flex: auto;
+background-color: darkgray;
+width: 60vw;
+border-color: rgb(21, 83, 54);
+border-style: solid;
+}
+
+
+.episodeTitle {
+display:flex;
+flex: auto;
+background-color:rgb(230, 173, 227);
+width: 80vw;
+border-color: rgb(46, 0, 139);
+border-style: solid;
+
+}
+
+.season {
+display:flex;
+flex: auto;
+background-color:rgb(230, 173, 227);
+width: 80vw;
+border-color: rgb(46, 0, 139);
+border-style: solid;
+}
+
+
+.image {
+  display: flex;
+  flex: auto;
+  background-color: dodgerblue;
+  width: 80vw;
+  border-color: rgb(21, 83, 54);
+  border-style: solid;
+}
+
+.summary {
+display:flex;
+flex: auto;
+background-color:rgb(230, 173, 227);
+width: 80vw;
+border-color: rgb(46, 0, 139);
+border-style: solid;
+}
+
+
