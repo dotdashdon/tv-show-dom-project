@@ -28,27 +28,44 @@ box-sizing: border-box;
 
 }
 
+
+ 
+   .card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
 .container {
+  padding: 2px 16px;
+}
+ 
+/* .container {
 display:flex;
 flex: auto;
-background-color:lightblue;
-width: 10vw;
+width: 50vw;
 border-radius: 3px;
 border-color:rgb(139, 61, 113);
 border-style: solid;
-}
+} */
 
-.cardContainer{
+/* .cardContainer{
 display: flex;
 flex: auto;
 background-color: darkgray;
 width: 60vw;
 border-color: rgb(21, 83, 54);
 border-style: solid;
-}
+} */
 
-
-.episodeTitle {
+/* 
+.episode {
 display:flex;
 flex: auto;
 background-color:rgb(230, 173, 227);
@@ -84,6 +101,6 @@ background-color:rgb(230, 173, 227);
 width: 80vw;
 border-color: rgb(46, 0, 139);
 border-style: solid;
-}
+} */
 
 
