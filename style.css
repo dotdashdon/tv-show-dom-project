@@ -60,7 +60,7 @@ box-sizing: border-box;
   border-radius: 4px;
 }
  
-.episode {
+.title {
   color: rgb(30, 136, 229);
   font-family: 'Montserrat', sans-serif;
 
@@ -72,6 +72,15 @@ color:rgb(30, 136, 229);
 font-family: 'Montserrat', sans-serif;
 
 } 
+
+
+.paragraph {
+background-color:rgb(144, 202, 249);
+color:rgb(30, 136, 229); 
+font-family: 'Montserrat', sans-serif;
+
+} 
+
 
 /* .container {
 display:flex;

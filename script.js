@@ -1,50 +1,75 @@
-//You can edit ALL of the code here
 
-//create body
+//create body and its tag
 const body = document.querySelector('body');
 body.style.backgroundColor = 'rgb(66, 165, 245';
 
+//NB heading created in CSS 
 
-//rootElem.style.backgroundColor ='white';
-
-//container for all episodes cards 
+  //container panel for all episodes cards 
 const container = document.createElement ('div');
 container.setAttribute('class', 'container');
 body.appendChild(container);
 
+
+function makePageForEpisodes(episodeList) {    //this was provided already and displays number of episodes of series 
+  const rootElem = document.getElementById("root");
+  rootElem.textContent = ` ${episodeList.length} Episodes`;
+  body.appendChild(rootElem);
+
+//code below should create cards , populate with title, summary, image and append to container card
+
+episodeList.forEach((episode) => {
+  
 //episode card - append to container 
 const card = document.createElement('div'); 
 card.setAttribute('class', 'card');
 container.appendChild(card);
 
 //episode title append to card 
-const episode = document.createElement('h4');
-episode.setAttribute('class' ,'episode');
-episode.innerText="Episode Title";
-card.appendChild(episode);
+const title = document.createElement('h4');
+title.setAttribute('class' ,'title');
+title.innerHTML =`${episode.name}`;
+card.appendChild(title);
 
-//episode count append to card
+//episode count append to card - do not append to card!! 
 const rootElem = document.getElementById("root");
-card.appendChild(rootElem);
+//card.appendChild(rootElem);
 
 //season append to card 
 
-const season = document.createElement('h4');
-season.setAttribute('class', 'season');
-season.innerText = 'Season:1 Episode:1';
-card.appendChild(season);
+// const season = document.createElement('h4');
+// season.setAttribute('class', 'season');
+// season.innerText = 'Season:1 Episode:1';
+// card.appendChild(season);
 
 //episode image append to card 
 
-const image = document.createElement('img');
-image.setAttribute('class', 'image');//??
-card.appendChild(image);
+// const image = document.createElement('img');
+// image.setAttribute('class', 'image');//??
+// card.appendChild(image);
 
 //summary append to card 
-const summary= document.createElement('p');
-summary.setAttribute('class', 'summary');
-summary.innerText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce blandit porttitor condimentum. Praesent sed varius mi, nec rhoncus tellus. Fusce pretium consectetur dui a dignissim. Ut tempor orci odio, sed sollicitudin purus suscipit eu. Aenean nec aliquam urna, at ultrices ante. Phasellus ultrices massa id ante accumsan cursus. Nullam auctor magna at metus rutrum accumsan. Donec pharetra lorem in ligula posuere, vel blandit neque cursus.';
-card.appendChild(summary);
+const paragraph = document.createElement('p');
+paragraph.setAttribute('class', 'paragraph');
+paragraph.innerHTML = episode.summary; 
+card.appendChild(paragraph);
+}
+)};
+
+
+function setup() {
+  const allEpisodes = getAllEpisodes();
+  makePageForEpisodes(allEpisodes);
+}
+
+
+window.onload = setup;
+
+
+
+
+
+
 
 //box for Title 
 
@@ -77,14 +102,3 @@ card.appendChild(summary);
 // document.body.appendChild(containerDiv);
 
 
-function setup() {
-  const allEpisodes = getAllEpisodes();
-  makePageForEpisodes(allEpisodes);
-}
-
-function makePageForEpisodes(episodeList) {
-  const rootElem = document.getElementById("root");
-  rootElem.textContent = ` ${episodeList.length} Episodes`;
-}
-
-window.onload = setup;
