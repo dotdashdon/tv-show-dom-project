@@ -35,18 +35,19 @@ card.appendChild(title);
 const rootElem = document.getElementById("root");
 //card.appendChild(rootElem);
 
-//season append to card 
+//season and episode numbers -  append to card 
 
-// const season = document.createElement('h4');
-// season.setAttribute('class', 'season');
-// season.innerText = 'Season:1 Episode:1';
-// card.appendChild(season);
+const season = document.createElement('h4');
+season.setAttribute('class', 'season');
+season.innerHTML = `${episode.season}: ${episode.number}`;
+card.appendChild(season);
 
-//episode image append to card 
+//episode image append to card --- images not showing up! 
 
-// const image = document.createElement('img');
-// image.setAttribute('class', 'image');//??
-// card.appendChild(image);
+const image = document.createElement('img');
+image.setAttribute('class', 'image');//??
+image.src =episode.name.medium;
+card.appendChild(image);
 
 //summary append to card 
 const paragraph = document.createElement('p');
