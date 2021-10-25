@@ -46,7 +46,7 @@ card.appendChild(season);
 
 const image = document.createElement('img');
 image.setAttribute('class', 'image');//??
-image.src =episode.name.medium;
+image.src =episode.image.medium;
 card.appendChild(image);
 
 //summary append to card 
