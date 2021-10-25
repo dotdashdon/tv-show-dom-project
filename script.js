@@ -2,7 +2,7 @@
 
 //create body
 const body = document.querySelector('body');
-body.style.backgroundColor = 'white';
+body.style.backgroundColor = 'rgb(66, 165, 245';
 
 
 //rootElem.style.backgroundColor ='white';
@@ -10,7 +10,6 @@ body.style.backgroundColor = 'white';
 //container for all episodes cards 
 const container = document.createElement ('div');
 container.setAttribute('class', 'container');
-container.style.backgroundColor ='fushia';
 body.appendChild(container);
 
 //episode card - append to container 

@@ -1,51 +1,50 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
 
 * {
 box-sizing: border-box;
 }
 
+
+.body {
+  background-color: rgb( 21, 101, 192);
+}
+
+
+.h1{
+
+}
+
 .header {
-  padding: 60px;
+    background-color: rgb(100, 181, 246);
+    color:rgb(30, 136, 229);
+  /* padding: 60px;
   overflow: hidden;
    background: repeating-linear-gradient(
         to right,
           #4c79b4,
   #f65752 30px,
   #178545 30px,
-  #11100d 10px
+  #11100d 10px */
 
-      
-    );
-  
   padding: 20px 10px;
-  font-family: 'Muli',sans-serif;
+  font-family: 'Montserrat', sans-serif;
   border-style: solid;
 }
-
-#rainbow-box {
-    width: 80vw;
-    height: 200px;
-    border-radius: 5px;
-   
-}
-
-
 
 #root {
-  color: black;
-  background-color: darkgoldenrod;
-  font-family: 'Muli',sans-serif;
-  border-color: darkred;
-  border-style: solid;
-
+  color: rgb(30, 136, 229);
+  background-color:rgb(144, 202, 249);
+  font-family: 'Montserrat', sans-serif;
+  
 }
 
    .card {
   /* Add shadows to create the "card" effect */
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  background-color: coral;
+  background-color: rgba(144, 202, 249);
+  border-radius: 4px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* On mouse-over, add a deeper shadow */
@@ -56,12 +55,22 @@ box-sizing: border-box;
 /* Add some padding inside the card container */
 .container {
   padding: 4px 16px;
-  background-color: cadetblue;
+  background-color: rgb(21, 101, 192); 
   margin-top: 50px;
+  border-radius: 4px;
 }
  
+.episode {
+  color: rgb(30, 136, 229);
+  font-family: 'Montserrat', sans-serif;
+
+}
+
 .season {
-background-color:rgb(230, 173, 227);
+background-color:rgb(144, 202, 249);
+color:rgb(30, 136, 229); 
+font-family: 'Montserrat', sans-serif;
+
 } 
 
 /* .container {
