@@ -1,36 +1,8 @@
-//create body and its tag
-const body = document.querySelector("body");
-body.style.backgroundColor = "#051923";
-body.style.color = "#ffffff;"
 
 function setup() {
   const allEpisodes = getAllEpisodes();
   makePageForEpisodes(allEpisodes);
 }
-
-//NB heading created in CSS
-
-
-// const search = document.getElementsByClassName("search");
-// search. addEventListener("input", e=> 
-// {
-//    const searchString = e.target.value.toLowerCase();
-
-//    const filteredEpisodes = episodeList.filter((episode)) => {
-//       return (
-// episode.name.toLowerCase().includes(searchString) ||
-// episode.name.toUpperCase().includes(searchString)
-
-//       )
-//    }
-
-// });
-
-
-//function findEpisodes (episodeList) {
-       
-//}
-
 
 //container panel for all episodes cards
 const container = document.createElement("div");
@@ -69,7 +41,7 @@ function makePageForEpisodes(episodeList) {
       .padStart(2, "0")}: ${episode.number.toString().padStart(2, "0")}`;
     card.appendChild(season);
 
-    //episode image append to card ---
+    //episode image append to card 
 
     const image = document.createElement("img");
     image.setAttribute("class", "image"); //?? change class name as too confusing
@@ -85,31 +57,54 @@ function makePageForEpisodes(episodeList) {
  
 }
 
+
+//search using james Q quick aka harry potter 
+const searchBar = document.getElementById("searchBar");
+//let hpCharacters = [];
+
+searchBar.addEventListener("input", (e) => {
+  const searchString = e.target.value.toLowerCase();
+
+  const filteredEps = allEpisodes.filter((episode) => {
+    return (
+      episodeList.name.toLowerCase().includes(searchString) ||
+      epsiode.summary.toLowerCase().includes(searchString)
+    );
+  });
+  makePageForEpisodes(filteredEps);
+});
+
+// const loadCharacters = async () => {
+//   try {
+//     const res = await fetch("https://hp-api.herokuapp.com/api/characters");
+//     hpCharacters = await res.json();
+//     displayCharacters(hpCharacters);
+//   } catch (err) {
+//     console.error(err);
+//   }
+// };
+
+// const displayCharacters = (characters) => {
+//   const htmlString = characters
+//     .map((character) => {
+//       return `
+//             <li class="character">
+//                 <h2>${character.name}</h2>
+//                 <p>House: ${character.house}</p>
+//                 <img src="${character.image}"></img>
+//             </li>
+//         `;
+//     })
+//     .join("");
+//   charactersList.innerHTML = htmlString;
+// };
+
+// loadCharacters();
+
+
+
+
+
+
 window.onload = setup;
 
-//box for Title
-
-// //create header
-// const titleBar = document.createElement('div');
-// header.classList.add('title-bar');
-// const header = document.createElement('h1');
-// document.body.appendChild(header);
-// titleBar.style.backgroundColor = 'lightblue';
-// header.innerText = 'TV SHOWS';
-
-// //create wrapper div
-// const cardWrapper = document.createElement('div');
-// document.body.appendChild(cardWrapper);
-// cardWrapper.style.backgroundColor = 'white';
-// cardWrapper.innerText= 'Something here';
-
-// //button
-// const btn = document.createElement("Button");
-// btn.innerHTML ="Click me";
-// document.body.appendChild(btn);
-
-//div
-// const containerDiv = document.createElement("div");
-// containerDiv.innerText="test";
-// containerDiv.style.color ="red";
-// document.body.appendChild(containerDiv);
