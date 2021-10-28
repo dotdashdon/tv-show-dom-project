@@ -1,4 +1,6 @@
 * {
+  padding:0;
+  margin:0;
   box-sizing: border-box;
 }
 
@@ -24,16 +26,32 @@
   padding: 20px 10px;
   font-family: "Montserrat", sans-serif;
 }
-
+.heading {
+  text-align:left;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
 #search {
   color: #ffffff;
   text-align: center;
   font-family: "Montserrat", sans-serif;
+  border:none;
+  border-radius: 5px;
+}
 
+
+#searchWrapper {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  border:none;
+  border-radius: 5px;
 }
 
 input[type="text"] {
     font-family: "Montserrat", sans-serif;
+     border:none;
+  border-radius: 5px;
 }
 
 .form-container {
@@ -49,10 +67,14 @@ input[type="text"] {
 
 select {
     font-family: "Montserrat", sans-serif;
+    border:none;
+     border-radius: 5px;
 }
 
 option {
     font-family: "Montserrat", sans-serif;
+    border:none;
+     border-radius: 5px;
 }
 #root {
   color: #ffffff;
@@ -61,6 +83,8 @@ option {
 }
 /* Add some padding inside the card container */
 .container {
+  width: 90%;
+  margin: 50px auto;
   display: flex;
   padding: 4px 16px;
   background-color: #12b0ee;
