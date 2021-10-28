@@ -69,7 +69,7 @@ searchBar.addEventListener("input", (e) => {
   const filteredEps = allEpisodes.filter((episode) => {
     return (
       episodeList.name.toLowerCase().includes(searchString) ||
-      epsiode.summary.toLowerCase().includes(searchString)
+      episode.summary.toLowerCase().includes(searchString)
     );
   });
   makePageForEpisodes(filteredEps);
