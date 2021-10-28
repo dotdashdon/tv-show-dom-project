@@ -1,18 +1,17 @@
-
-
 * {
-box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 
 .body {
-  background-color: rgb( 21, 101, 192);
+  background-color: #051923;
+  color: #ffffff;
 }
 
-
 .header {
-    background-color: rgb(100, 181, 246);
-    color:rgb(30, 136, 229);
+  background-color: #00a8e8;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 4px;
   /* padding: 60px;
   overflow: hidden;
    background: repeating-linear-gradient(
@@ -23,61 +22,107 @@ box-sizing: border-box;
   #11100d 10px */
 
   padding: 20px 10px;
-  font-family: 'Montserrat', sans-serif;
-  border-style: solid;
+  font-family: "Montserrat", sans-serif;
 }
 
+#search {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+
+}
+
+input[type="text"] {
+    font-family: "Montserrat", sans-serif;
+}
+
+.form-container {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+#episodes {
+    font-family: "Montserrat", sans-serif;
+}
+
+
+select {
+    font-family: "Montserrat", sans-serif;
+}
+
+option {
+    font-family: "Montserrat", sans-serif;
+}
 #root {
-  color: rgb(30, 136, 229);
-  background-color:rgb(144, 202, 249);
-  font-family: 'Montserrat', sans-serif;
-  
+  color: #ffffff;
+  background-color: #00a8e8;
+  font-family: "Montserrat", sans-serif;
+}
+/* Add some padding inside the card container */
+.container {
+  display: flex;
+  padding: 4px 16px;
+  background-color: #12b0ee;
+  margin-top: 50px;
+  border-radius: 4px;
+  color: #ffffff;
 }
 
-   .card {
+.card {
   /* Add shadows to create the "card" effect */
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width:auto;
+  box-sizing: border-box;
+  margin: 1 rem .25em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  background-color: rgba(144, 202, 249);
+  background-color: #00a8e8;
   border-radius: 4px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* On mouse-over, add a deeper shadow */
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-/* Add some padding inside the card container */
-.container {
-  padding: 4px 16px;
-  background-color: rgb(21, 101, 192); 
-  margin-top: 50px;
-  border-radius: 4px;
-}
- 
+
+
 .title {
-  color: rgb(30, 136, 229);
-  font-family: 'Montserrat', sans-serif;
-
+  color: #00a8e8;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  text-align: center;
 }
 
 .season {
-background-color:rgb(144, 202, 249);
-color:rgb(30, 136, 229); 
-font-family: 'Montserrat', sans-serif;
-
-} 
-
+  background-color: #00a8e8;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+}
 
 .paragraph {
-background-color:rgb(144, 202, 249);
-color:rgb(30, 136, 229); 
-font-family: 'Montserrat', sans-serif;
+  background-color: #00a8e8;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+}
 
-} 
+.image {
+  border-radius: 4px;
+}
 
 
+/*TV Link*/
+footer-div {
+  border-radius: 4px;
+}
+
+footer {
+  color: #ffffff;
+  text-align: center;
+}
 /* .container {
 display:flex;
 flex: auto;
@@ -134,5 +179,3 @@ width: 80vw;
 border-color: rgb(46, 0, 139);
 border-style: solid;
 } */
-
-

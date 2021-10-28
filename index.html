@@ -6,22 +6,44 @@
     <title>TV Show Project | Donna Henry (dotdashdon)</title>
     <link href="style.css" rel="stylesheet" />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-    <div class ="header">
+    <div class="header">
       <h1>Television Shows</h1>
     </div>
-    <div id="root">
+    <div class="search" id="search">
+      <input type="text"  placeholder="Find your next show..." />
+    </div><br>
+    <div class="form-container">
+      <form action="/action_page.php">
+        <label for="episodes"></label>
+        <select name="episodes" id="epsisodes">
+          <option value="ep1">Select episode</option>
+          <option value="ep1">episode-1</option>
+          <option value="ep2">episode-2</option>
+          <option value="ep3">episode-3</option>
+          <option value="ep4">episode-4</option>
+        </select>
+      </form>
     </div>
+    <div id="root"></div>
 
     <!-- Loads a provided function called getAllEpisodes() which returns all episodes -->
     <script src="episodes.js"></script>
 
     <!-- Loads YOUR javascript code -->
+  
     <script src="script.js"></script>
   </body>
+  <div class ='footer-div'>
+  <footer class='footer'><p>TVMaze.com</p></footer>
+  </div>
+  
 </html>
