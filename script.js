@@ -1,13 +1,17 @@
+const container = document.createElement("div");
+
+const body = document.querySelector("body");
+body.style.backgroundColor = "#051923";
+body.style.color = "#ffffff;";
 
 function setup() {
+  container.setAttribute("class", "container");
+  body.appendChild(container);
   const allEpisodes = getAllEpisodes();
   makePageForEpisodes(allEpisodes);
 }
 
 //container panel for all episodes cards
-const container = document.createElement("div");
-container.setAttribute("class", "container");
-body.appendChild(container);
 
 
 function makePageForEpisodes(episodeList) {
@@ -15,11 +19,10 @@ function makePageForEpisodes(episodeList) {
   // const rootElem = document.getElementById("root");
   // rootElem.textContent = ` ${episodeList.length} Episodes`;
   // body.appendChild(rootElem);
-  
+
   //code below should create cards , populate with title, summary, image and append to container card
 
   episodeList.forEach((episode) => {
-    
     //episode card - append to container
     const card = document.createElement("div");
     card.setAttribute("class", "card");
@@ -41,7 +44,7 @@ function makePageForEpisodes(episodeList) {
       .padStart(2, "0")}: ${episode.number.toString().padStart(2, "0")}`;
     card.appendChild(season);
 
-    //episode image append to card 
+    //episode image append to card
 
     const image = document.createElement("img");
     image.setAttribute("class", "image"); //?? change class name as too confusing
@@ -54,11 +57,9 @@ function makePageForEpisodes(episodeList) {
     paragraph.innerHTML = episode.summary;
     card.appendChild(paragraph);
   });
- 
 }
 
-
-//search using james Q quick aka harry potter 
+//search using james Q quick aka harry potter
 const searchBar = document.getElementById("searchBar");
 //let hpCharacters = [];
 
@@ -101,10 +102,4 @@ searchBar.addEventListener("input", (e) => {
 
 // loadCharacters();
 
-
-
-
-
-
 window.onload = setup;
-
