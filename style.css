@@ -26,26 +26,33 @@
   padding: 20px 10px;
   font-family: "Montserrat", sans-serif;
 }
-.heading {
+.heading  {
   text-align:left;
-  font-size: 20px;
-  margin-bottom: 20px;
+  font-size: 18px;
+  /* margin-bottom: 10px; */
+  padding: 2%;
+  color:#ffffff;
 }
+
+
 #search {
   color: #ffffff;
-  text-align: center;
+  text-align: left;
   font-family: "Montserrat", sans-serif;
   border:none;
   border-radius: 5px;
 }
 
-
 #searchWrapper {
+  display: flex;
   color: #ffffff;
   text-align: center;
   font-family: "Montserrat", sans-serif;
   border:none;
   border-radius: 5px;
+  /* margin-left: 5%; */
+  padding: 4%;
+  margin-bottom: 40px;
 }
 
 input[type="text"] {
@@ -54,9 +61,10 @@ input[type="text"] {
   border-radius: 5px;
 }
 
-.form-container {
+.formBox {
+  display: flex;
   color: #ffffff;
-  text-align: center;
+  padding:4%;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -69,6 +77,8 @@ select {
     font-family: "Montserrat", sans-serif;
     border:none;
      border-radius: 5px;
+     padding:2%;
+     margin-bottom: 40px;
 }
 
 option {
@@ -86,11 +96,10 @@ option {
   width: 90%;
   margin: 50px auto;
   display: flex;
-  padding: 4px 16px;
-  background-color: #12b0ee;
-  margin-top: 50px;
-  border-radius: 4px;
-  color: #ffffff;
+  background-color: #12b0ee; 
+  padding: 4px 16px; 
+  border-radius: 5px;
+ 
 }
 
 .card {
