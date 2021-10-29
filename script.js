@@ -62,11 +62,16 @@ function makePageForEpisodes(episodeList) {
     card.appendChild(season);
 
     //Episode image appended to card
+    const imgWrapper = document.createElement("div"); 
+    imgWrapper.classList.add("img-wrapper"); 
+    card.appendChild(imgWrapper);
     const image = document.createElement("img");
     image.setAttribute("class", "image"); //?? change class name as too confusing
     image.src = episode.image.medium;
     card.appendChild(image);
 
+
+    
     //Summary appended to card
     const paragraph = document.createElement("p");
     paragraph.setAttribute("class", "paragraph");
