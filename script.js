@@ -1,3 +1,5 @@
+let allEpisodes;
+
 const container = document.createElement("div");
 
 const body = document.querySelector("body");
@@ -7,11 +9,24 @@ body.style.color = "#ffffff;";
 function setup() {
   container.setAttribute("class", "container");
   body.appendChild(container);
+  allEpisodes = getAllEpisodes();
+  makePageForEpisodes(allEpisodes);
+
+ fillEpisodeDropdown();
+
 }
 
+function fillEpisodeDropdown(){
+const epiGroup = document.getElementById("episodeGroup");
+epiGroup.innerHTML = '';
+allEpisodes.forEach((episode)=> {
+const option = document.createElement("option");
+
+epiGroup.appendChild(option);
+})
+
+}
 //container panel for all episodes cards
-  const allEpisodes = getAllEpisodes();
-  makePageForEpisodes(allEpisodes);
 
 function makePageForEpisodes(episodeList) {
   //this was provided already and displays number of episodes of series
@@ -20,7 +35,7 @@ function makePageForEpisodes(episodeList) {
   // body.appendChild(rootElem);
 
   //code below should create cards , populate with title, summary, image and append to container card
-
+   container.innerHTML = ''; //empties container of cards
   episodeList.forEach((episode) => {
     //episode card - append to container
     const card = document.createElement("div");
@@ -67,12 +82,14 @@ searchBar.addEventListener("input", (e) => {
 
   const filteredEps = allEpisodes.filter((episode) => {
     return (
-      episodeList.name.toLowerCase().includes(searchString) ||
+      episode.name.toLowerCase().includes(searchString) ||
       episode.summary.toLowerCase().includes(searchString)
     );
   });
   makePageForEpisodes(filteredEps);
 });
+
+
 
 // const loadCharacters = async () => {
 //   try {
