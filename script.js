@@ -7,12 +7,11 @@ body.style.color = "#ffffff;";
 function setup() {
   container.setAttribute("class", "container");
   body.appendChild(container);
-  const allEpisodes = getAllEpisodes();
-  makePageForEpisodes(allEpisodes);
 }
 
 //container panel for all episodes cards
-
+  const allEpisodes = getAllEpisodes();
+  makePageForEpisodes(allEpisodes);
 
 function makePageForEpisodes(episodeList) {
   //this was provided already and displays number of episodes of series
