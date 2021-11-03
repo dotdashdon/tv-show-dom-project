@@ -3,7 +3,7 @@ let allEpisodes; //calls all episodes (?)
  const API_URL = 'https://api.tvmaze.com/shows/82/episodes';
   
 
-window.onload = () => {   
+function setup = () => {   
 	fetch(API_URL)
 	.then((response) => {
 			return response.json();
@@ -14,8 +14,6 @@ window.onload = () => {
      allEpisodes = getAllEpisodes();
     makePageForEpisodes(allEpisodes);
     fillEpisodeDropdown();
-
-
 
 //global elements
 const container = document.createElement("div");
@@ -111,4 +109,4 @@ searchBar.addEventListener("input", (e) => {
   makePageForEpisodes(filteredEps);
 });
 
-//window.onload = setup;
+window.onload = setup;
