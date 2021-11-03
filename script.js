@@ -1,19 +1,36 @@
 let allEpisodes; //calls all episodes (?)
 
+ const API_URL = 'https://api.tvmaze.com/shows/82/episodes';
+  
+
+window.onload = () => {   
+	fetch(API_URL)
+	.then((response) => {
+			return response.json();
+		})
+		.then((jsonData) => {
+			allEpisodes = jsonData;
+			makePageForEpisodes(episodeList);
+     allEpisodes = getAllEpisodes();
+    makePageForEpisodes(allEpisodes);
+    fillEpisodeDropdown();
+
+
+
 //global elements
 const container = document.createElement("div");
 const body = document.querySelector("body");
 body.style.backgroundColor = "#051923";
 body.style.color = "#ffffff;";
 
-//Page on load
-function setup() {
-  container.setAttribute("class", "container");
-  body.appendChild(container);
-  allEpisodes = getAllEpisodes();
-  makePageForEpisodes(allEpisodes);
-  fillEpisodeDropdown();
-}
+// //Page on load
+// function setup() {
+//   container.setAttribute("class", "container");
+//   body.appendChild(container);
+//   allEpisodes = getAllEpisodes();
+//   makePageForEpisodes(allEpisodes);
+//   fillEpisodeDropdown();
+// }
 
 //This need to return to default option of 'choose episodes' but how?
 function fillEpisodeDropdown() {
@@ -94,4 +111,4 @@ searchBar.addEventListener("input", (e) => {
   makePageForEpisodes(filteredEps);
 });
 
-window.onload = setup;
+//window.onload = setup;

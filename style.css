@@ -93,7 +93,7 @@ option {
 }
 /* Add some padding inside the card container */
 .container {
-  width: 90%;
+  width: 80%;
   margin: 50px auto;
   display: flex;
   background-color: #12b0ee; 
@@ -106,7 +106,7 @@ option {
   /* Add shadows to create the "card" effect */
   justify-content: space-between;
   flex-wrap: wrap;
-  width:auto;
+  width:50%;
   box-sizing: border-box;
   margin: 1 rem .25em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
