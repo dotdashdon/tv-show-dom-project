@@ -3,19 +3,90 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TV Show Project | My Name (My GitHub username)</title>
+    <title>TV Show Project | Donna Henry (dotdashdon)</title>
     <link href="style.css" rel="stylesheet" />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-    <div id="root">
+    <div class="container">
+<div class="heading">
+  <h1>Television Shows</h1>
+</div>
+ <div id="searchWrapper">
+      <input type="text" name= "searchBar" class="searchText" id="searchBar"  placeholder="Find your next show..." />
     </div>
+<div class="formBox">
+ 
+<label for="dropDownEpisodes"></label>
+<select name="dropDownEpisodes" id="dropDownEpisodes" class="dropdownEps">
+  <optgroup label="Choose Episode" class="labeleps" id="episodeGroup">
+    <option value="ep1">Episode One</option>
+    <option value="ep2">Episode Two</option>
+    <option value="ep3">Episode Three</option>
+    <option value="ep4">Episode Four</option>
+  </optgroup> 
+</select>
+
+<label for="dropDownSeason"></label>
+<select name="dropDownSeasons" id="dropDownSeasons" class="dropdownSeas">
+  <optgroup label ="chooseSeason"class="labelseas">
+    <option value="ep1">Season One</option>
+    <option value="ep2">Season Two</option>
+    <option value="ep3">Season Three</option>
+    <option value="ep4">Season Four</option>
+  </optgroup>
+</select>
+
+
+</div>
+<!-- <div class="info-container">
+<div class="search">
+    <div class="input">
+      <input type="text" placeholder="Search" id="mysearch">
+    </div>
+  <div class="dropdown"></div>
+
+  </div>
+</div>
+</div> -->
+<!-- 
+    <div class="header"> -->
+  
+    <!-- </div> -->
+    
+    <div class="form-container">
+      <!-- <form action="/action_page.php">
+        <label for="episodes"></label>
+        <select name="episodes" id="episodeList">
+          <option value="ep1">Select episode</option>
+          <option value="ep1">episode-1</option>
+          <option value="ep2">episode-2</option>
+          <option value="ep3">episode-3</option>
+          <option value="ep4">episode-4</option>
+        </select>
+      </form> -->
+    </div>
+     <!-- <div class ='footer-div'>
+  <footer class='footer'><p>TVMaze.com</p></footer>
+  </div> -->
+    <div id="root"></div>
 
     <!-- Loads a provided function called getAllEpisodes() which returns all episodes -->
     <script src="episodes.js"></script>
 
     <!-- Loads YOUR javascript code -->
+  
     <script src="script.js"></script>
+     
+<!-- <div class="footer">
+  <footer>data supplied by TVMaze.com</footer>
+</div> -->
   </body>
 </html>
